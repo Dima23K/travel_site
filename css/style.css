@@ -1,0 +1,321 @@
+@charset='UTF-8';
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height 1.3em;
+	font-family: Arial, sans-serif;
+	background: #F2F2F2;
+	color: #2a2a2a;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+
+/* Global styles */
+a {
+	text-decoration: none;
+	color: #f63;
+}
+
+a:visited {
+	color: #fff;
+}
+
+a, a:active {
+	background-color:#CF5C3F;
+	color: #FFF;
+
+}
+a:hover {
+	color: #FFF;
+}
+.container {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	background: #FFF3E0;
+	max-width: 1200px;
+}
+
+/* Top-Bar */
+#top-bar {
+	display: block;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	padding: 24px 18px;
+}
+#top-bar:before, #top-bar:after {
+	display: table;
+	content: "";
+}
+
+#top-bar:after {
+	clear: both;
+}
+
+.search-bar {
+	display: inline-block;
+	width: 100%;
+	max-width: 600px;
+}
+
+.search-bar input {
+	display: block;
+}
+
+#search-box {
+	border: 1px solid #ccc;
+	float: left;
+	width: 100%;
+	max-width: 480px;
+	padding: 8px 14px;
+	margin: 0px;
+	line-height: 1em;
+	border-radius: 500px;
+}
+
+#search-box:Focus {
+	boder: none;
+}
+
+#search-btn {
+	background: #339999;
+	margin: 0px 0px 0px 24px;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #339999;
+	border-radius: 500px;
+}
+
+#logo {
+	display: inline-block;
+	margin-right: 32px;
+}
+
+/* Showcase styles */
+.banner {
+	position: relative;
+	width: 100%;
+	height: 540px;
+	overflow: hidden;
+}
+
+.banner img {
+	width: 100%;
+	opacity: 0.8;
+}
+
+.banner h1 {
+
+	display: block;
+	width: 30%;
+	position: absolute;
+	font-family: "Helvetica", sans-serif;
+	font-size: 500%;
+	line-height: 68px;
+	top: 240px;
+	left: 48px;
+	z-index: 1000;
+	color: #FFF;
+}
+
+.main-nav {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+
+.main-nav ul {
+	list-style: none;
+}
+
+.list-item {
+	display: inline-block;
+	width: 24.90%;
+	float: left;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+	border-right: 1px solid #FFF;
+}
+
+.list-item: last-of-type {
+	border: none;
+}
+
+.list-item:hover {
+	background: #F63;
+}
+
+/* Section styles */
+section {
+	display: block;
+	padding: 32px 12px;
+}
+
+.article {
+	display: block;
+	width: 100%;
+	height: 480px;
+	margin-bottom: 32px;
+	overflow: hidden;
+}
+
+.article img {
+	width: 60%;
+	float:left;
+}
+
+.article h1 {
+	margin-bottom: 32px;
+	font-size: 200%;
+}
+
+.article p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.article-text {
+	display: inline-block;
+	width: 35%; 
+	padding: 0px 0px 12px 12px;
+	margin-top: 15vH;
+}
+
+.package-wrapper {
+	display: block;
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.package-wrapper:before, .package-wrapper:after {
+	display: table;
+	content: "";
+}
+
+.package-wrapper:after {
+	clear: both;
+}
+
+.package {
+	display: inline-block;
+	max-width: 370px;
+	height: 480px;
+	margin-right: 12px;
+	margin-bottom: 24px;
+	overflow: hidden;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.package img {
+	width: 370px;
+	height: 250px;
+
+	margin-bottom: 32px;
+}
+
+.package: last-of-type {
+	margin-right: 0px;
+}
+
+.package button {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 32px;
+	background-color: #339999;
+	border: 1px solid #339994;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.package p {
+	font-size: 200%;
+	line-height: 32px;
+	margin-bottom: 24px;
+}
+
+.testimonial {
+	display: block;
+	width: 920px;
+	padding: 48px;
+	background-color: #FFF;
+	border: 2px dotted #ccc;
+	margin: 0 auto;
+	margin-bottom: 36px;
+	border-radius: 4px;
+
+}
+
+.testimonial:before, .testimonial:after {
+	display: table;
+	content: "";
+}
+
+.testimonial:after {
+	clear: both;
+}
+
+.testimonial img {
+	float: left;
+	width: 88px;
+	height: 88px;
+	margin-right: 24px;
+	border-radius: 500px;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+.testimonial p {
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.testimonial span {
+
+}
+
+footer {
+	width: 100%;
+	height: 80px;
+	background: #CF5C3F;
+}
+
+footer p {
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+footer ul {
+	list-style: none;
+	margin-left: 24px;
+}
+
+footer ul li a {
+	display: inline-block;
+	line-height: 48px;
+	float: left;
+	margin-left: 24px;
+}
